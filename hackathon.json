@@ -1,0 +1,11 @@
+{
+  "teamCode": "TEAM-049",
+  "teamName": "SOLECITOS",
+  "deployUrl": "https://",
+  "storageProvider": "SUPABASE | CLOUDINARY",
+  "integrantes": [
+    { "nombre": "Nombre Apellido", "codigo": "CODIGO UTEC" },
+    { "nombre": "Nombre Apellido", "codigo": "CODIGO UTEC" },
+    { "nombre": "Nombre Apellido", "codigo": "CODIGO UTEC" }
+  ]
+}

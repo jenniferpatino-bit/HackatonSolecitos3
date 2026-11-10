@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #06120f;
+  --color-panel: #0d1f1b;
+  --color-line: #2c4b43;
+  --color-fg: #dcf3ec;
+  --color-dim: #a5c4ba;
+  --color-accent: #5fe3c0;
+  --color-danger: #ffa8a8;
+  --color-warn: #ffd479;
+}
+
+html, body { background: var(--color-ink); color: var(--color-fg); }
+body { margin: 0; font-family: ui-sans-serif, system-ui, "Segoe UI", sans-serif; }
+
+a { color: var(--color-accent); text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+
+.card { background: var(--color-panel); border: 1px solid var(--color-line); border-radius: 8px; padding: 12px 14px; }
+.btn { display: inline-block; border: 1px solid var(--color-line); border-radius: 6px; padding: 7px 14px; color: var(--color-fg); background: transparent; text-decoration: none; cursor: pointer; }
+.btn:hover:not(:disabled) { border-color: var(--color-accent); }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.btn-primary { background: var(--color-accent); border-color: var(--color-accent); color: #06120f; font-weight: 600; }
+.btn-small { padding: 3px 9px; font-size: .8125rem; }
+.input { width: 100%; background: var(--color-ink); border: 1px solid var(--color-line); border-radius: 6px; padding: 7px 10px; color: var(--color-fg); }
+.field-error { color: var(--color-danger); font-size: .875rem; margin-top: 3px; }
+
+.grid-scroller { position: relative; flex: 1 1 0; min-width: 0; max-width: 1792px; height: min(76vh, 1120px); overflow: auto; background: var(--color-panel); border: 1px solid var(--color-line); border-radius: 8px; }
+.grid-surface { position: relative; }
+.grid-row { position: absolute; left: 0; right: 0; height: 30px; }
+.cell { position: absolute; top: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Menlo, monospace; font-size: 14px; color: var(--color-dim); user-select: none; cursor: default; }
+.cell-empty { background: rgba(255, 255, 255, .025); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .03); }
+.scary { color: #fff; font-weight: 700; text-decoration: underline; text-decoration-color: var(--color-accent); cursor: pointer; }
+.t1 { background: rgba(95, 227, 192, .12); }
+.t2 { background: rgba(95, 227, 192, .22); }
+.t3 { background: rgba(255, 212, 121, .25); }
+.t4 { background: rgba(255, 140, 140, .3); }
+.bin-w, .bin-f, .bin-d, .bin-m { color: #06120f; font-weight: 700; }
+.bin-w { background: #7fd1ff; }
+.bin-f { background: #ffd479; }
+.bin-d { background: #c9a6ff; }
+.bin-m { background: #ff9f9f; }
+.cell-sel { box-shadow: inset 0 0 0 2px #fff; background: rgba(255, 255, 255, .25); touch-action: none; cursor: grab; }
+.cell-held { box-shadow: inset 0 0 0 2px var(--color-warn); background-image: repeating-linear-gradient(45deg, rgba(255, 212, 121, .3) 0 3px, transparent 3px 7px); }
+.remote-cursor { position: absolute; top: 0; left: 0; width: 30px; height: 30px; border: 2px solid; border-radius: 3px; transition: transform .12s linear; }
+.remote-cursor span { position: absolute; top: -17px; left: -2px; padding: 0 4px; font-size: 11px; white-space: nowrap; background: var(--color-ink); color: var(--color-fg); }
+.drag-ghost { position: fixed; top: 0; left: 0; z-index: 40; padding: 3px 9px; border-radius: 6px; background: var(--color-accent); color: #06120f; font-size: 13px; font-weight: 600; pointer-events: none; }
+.bin-drop { display: block; width: 100%; text-align: left; padding: 8px; border: 1px solid var(--color-line); border-radius: 6px; color: var(--color-fg); background: transparent; cursor: pointer; }
+.bin-drop:disabled { opacity: .7; cursor: not-allowed; }
+.bin-drop[data-over] { border-color: var(--color-accent); background: rgba(95, 227, 192, .15); }
+.remote-cursor, .scary { will-change: auto; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .t1 { animation: tremble-a 1.1s linear infinite; }
+  .t2 { animation: tremble-a .7s linear infinite; }
+  .t3 { animation: tremble-b .45s linear infinite; }
+  .t4 { animation: tremble-b .25s linear infinite; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .remote-cursor { transition: none; }
+}
+@keyframes tremble-a { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(.6px, -.6px); } 75% { transform: translate(-.6px, .6px); } }
+@keyframes tremble-b { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(1.2px, -1px); } 50% { transform: translate(-1px, 1.2px); } 75% { transform: translate(1px, 1px); } }

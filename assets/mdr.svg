@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-labelledby="t d">
+  <title id="t">Macrodata Refinement</title>
+  <desc id="d">Una grilla de dígitos con un grupo resaltado y cuatro cajas numeradas debajo.</desc>
+  <rect width="420" height="240" rx="12" fill="#0b1d2a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="18" fill="#7fd3ff" text-anchor="middle">
+    <text x="60" y="44">4</text><text x="100" y="44">0</text><text x="140" y="44">9</text><text x="180" y="44">1</text><text x="220" y="44">8</text><text x="260" y="44">2</text><text x="300" y="44">7</text><text x="340" y="44">3</text>
+    <text x="60" y="76">6</text><text x="100" y="76">5</text><text x="140" y="76" fill="#ffffff" font-size="24">7</text><text x="180" y="76" fill="#ffffff" font-size="24">3</text><text x="220" y="76">0</text><text x="260" y="76">9</text><text x="300" y="76">1</text><text x="340" y="76">4</text>
+    <text x="60" y="108">2</text><text x="100" y="108">8</text><text x="140" y="108">4</text><text x="180" y="108" fill="#ffffff" font-size="24">9</text><text x="220" y="108" fill="#ffffff" font-size="24">1</text><text x="260" y="108">6</text><text x="300" y="108">0</text><text x="340" y="108">5</text>
+    <text x="60" y="140">1</text><text x="100" y="140">3</text><text x="140" y="140">0</text><text x="180" y="140">5</text><text x="220" y="140">7</text><text x="260" y="140">2</text><text x="300" y="140">8</text><text x="340" y="140">6</text>
+  </g>
+  <rect x="122" y="54" width="116" height="64" rx="8" fill="none" stroke="#ffffff" stroke-dasharray="4 4" opacity="0.6"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="14" text-anchor="middle">
+    <rect x="40" y="170" width="76" height="44" rx="4" fill="#12324a" stroke="#7fd3ff"/><text x="78" y="197" fill="#7fd3ff">01</text>
+    <rect x="132" y="170" width="76" height="44" rx="4" fill="#12324a" stroke="#7fd3ff"/><text x="170" y="197" fill="#7fd3ff">02</text>
+    <rect x="224" y="170" width="76" height="44" rx="4" fill="#12324a" stroke="#7fd3ff"/><text x="262" y="197" fill="#7fd3ff">03</text>
+    <rect x="316" y="170" width="76" height="44" rx="4" fill="#12324a" stroke="#7fd3ff"/><text x="354" y="197" fill="#7fd3ff">04</text>
+  </g>
+</svg>
