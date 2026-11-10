@@ -1,6 +1,6 @@
 # Entrega: cuadrilla SOLECITOS (TEAM-049)
 
-**Producción:** PENDIENTE (URL del despliegue)
+**Producción:** https://hackaton-solecitos3.vercel.app
 
 | Integrante | Código |
 |:--|:--|

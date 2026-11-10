@@ -1,7 +1,7 @@
 {
   "teamCode": "TEAM-049",
   "teamName": "SOLECITOS",
-  "deployUrl": "https://",
+  "deployUrl": "https://hackaton-solecitos3.vercel.app",
   "storageProvider": "SUPABASE | CLOUDINARY",
   "integrantes": [
     { "nombre": "Nombre Apellido", "codigo": "CODIGO UTEC" },
